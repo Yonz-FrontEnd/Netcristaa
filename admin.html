@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Painel Admin - Cristãnet</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<nav class="container-fluid">
+  <ul><li><strong>Painel Cristãnet</strong></li></ul>
+  <ul><li><a href="index.html">Voltar</a></li></ul>
+</nav>
+<main class="container">
+  <h2>Adicionar novo conteúdo</h2>
+  <form id="videoForm" class="grid">
+    <input type="text" id="titulo" placeholder="Título do vídeo" required />
+    <input type="url" id="link" placeholder="Link do vídeo (YouTube ou Archive)" required />
+    <input type="url" id="imagem" placeholder="Imagem de capa (opcional)" />
+    <select id="categoria" required>
+      <option value="estudos">Estudos Bíblicos</option>
+      <option value="devocionais">Devocionais</option>
+      <option value="filmes">Filmes e Séries</option>
+    </select>
+    <button type="submit">Adicionar</button>
+  </form>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
